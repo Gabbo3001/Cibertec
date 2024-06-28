@@ -4,6 +4,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #1A1516;
 }
 
 header {
@@ -13,6 +14,10 @@ header {
 .contenedor_menu {
   margin: 2px;
 }
+.contenedor_2 {
+  background-color: antiquewhite;
+}
+
 .navegacion_menu {
   display: flex;
   font-size: 16px;

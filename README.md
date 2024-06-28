@@ -34,4 +34,4 @@ Instrucciones paso a paso sobre cómo instalar y configurar el proyecto localmen
 git clone https://github.com/Gabbo3001/Cibertec
 
 # Entra en el directorio del proyecto
-cd proyecto
+cd Cibertec

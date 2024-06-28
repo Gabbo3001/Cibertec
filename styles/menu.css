@@ -1,6 +1,10 @@
 @import url("/styles/normalize.css");
 
 /*******************  HEADER  *******************/
+body {
+  background-color: #1A1516;
+}
+
 header {
   background-color: #fff;
   padding: 20px;
