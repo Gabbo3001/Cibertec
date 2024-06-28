@@ -1,0 +1,96 @@
+@import url("./normalize.css");
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  background-color: #1a1516;
+}
+.logo {
+  text-decoration: none;
+  color: #c29a53;
+  font-weight: bold;
+  margin-right: 20px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+h1,
+p {
+  color: rgb(0, 0, 0);
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.texto {
+  flex: 1;
+  margin-right: 20px;
+}
+
+img {
+  margin: 15px;
+}
+
+.nosotros {
+  border-radius: 30px;
+  background-color: #ffffff;
+  margin-top: 5px;
+  padding: 40px;
+  margin: 10px;
+  max-width: 500px;
+  min-width: 450px;
+  max-height: 680px;
+}
+
+.contenedor-uno {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.navegacion {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  padding-top: 45px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.navegacion__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagen img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.my-button {
+  padding: 10px 20px;
+  background-color: #c29a53;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #c29953bb;
+}
