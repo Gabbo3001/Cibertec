@@ -1,4 +1,4 @@
-Primer Proyecto web - Cibertec
+<h1 align="center">Proyecto Web - Cibetec</h1>
 
 **Integrantes:**
   - Daniel Porras
@@ -14,10 +14,6 @@ Este proyecto hecho en un par de dias, busca aprender los fundamentos y aplicarl
 - [Descripción](#descripción)
 - [Características](#características)
 - [Instalación](#instalación)
-- [Uso](#uso)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
-- [Contacto](#contacto)
 
 ## Descripción
 
