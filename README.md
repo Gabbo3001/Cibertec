@@ -7,7 +7,7 @@
   - ?
 
 
-Este proyecto hecho en un par de dias, busca aprender los fundamentos y aplicarlos en un restaurant virtual y poder poblicarlo algun dia :v 
+Este proyecto hecho en un par de dias, busca aprender los fundamentos y aplicarlos en un restaurant virtual y poder publicarlo algun dia :'v 
 
 ## Tabla de Contenidos
 
