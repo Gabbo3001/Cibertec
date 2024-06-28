@@ -98,6 +98,3 @@ section h2 {
   background: #fadeae;
   transition: transform 0.5s;
 }
-.tarjeta:hover .pasar_puntero {
-  transform: scale(1);
-}
