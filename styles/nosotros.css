@@ -23,10 +23,8 @@ p {
 
 .contenido {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .texto {
@@ -71,10 +69,6 @@ img {
   align-items: center;
 }
 
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .imagen img {
   max-width: 600px;
@@ -82,15 +76,25 @@ img {
   border-radius: 20px;
 }
 
-.my-button {
-  padding: 10px 20px;
-  background-color: #c29a53;
-  color: white;
+/* Estilos para los botones con efecto de pulsación */
+.pulse-effect {
   border: none;
-  border-radius: 5px;
+  color: white;
+  padding: 14px 28px;
   cursor: pointer;
+  border-radius: 5px;
+  background-color: #1A1516; /* Color base del botón */
+  transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
 }
 
-.my-button:hover {
-  background-color: #c29953bb;
+.pulse-effect:hover {
+  background-color: #1a1516d2; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.pulse-effect:active {
+  transform: scale(0.50); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+}
+.about-us {
+  display: flex;
+  justify-content: flex-end;
 }
