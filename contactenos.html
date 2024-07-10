@@ -8,94 +8,80 @@
   </head>
   <body>
     <header>
-      <div class="contenedor_menu">
-        <nav class="navegacion_menu">
-          <a class="logo" href="index.html"> Sabor y Placer</a>
-          <div class="navegacion_items">
-            <a href="index.html"> Inicio</a>
-            <a href="menu.html"> Menu</a>
-            <a href="nosotros.html"> Nosotros</a>
-            <a href="contactenos.html"> Contáctenos</a>
-          </div>
-        </nav>
+      <div class="containerHeader">
+          <nav>
+              <a href="index.html" class="logo">
+                  <h1>Sabor Y Placer</h1>
+              </a>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="menu.html">Menú</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+                  <li><a href="contactenos.html">Contáctenos</a></li>
+              </ul>
+          </nav>
       </div>
     </header>
-    <main>
-      <section class="contact">
-        <div class="contenedor_1">
-          <div class="contact-form">
-            <h2>Contáctanos</h2>
-            <form action="#">
-              <div class="group-name">
-                <div class="form-group">
-                  <label for="name">Nombres</label>
-                  <input type="text" id="name" placeholder="Daniel" />
-                </div>
-                <div class="form-group">
-                  <label for="surname">Apellidos</label>
-                  <input type="text" id="surname" placeholder="Porras" />
-                </div>
-              </div>
 
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="email@janesfakedomain.net"
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Tu pedido</label>
-                <textarea
-                  id="message"
-                  placeholder="Escribe tu pedido"
-                ></textarea>
-              </div>
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <div class="contenedor_2">
-        <div class="logo">
-          <img src="./images/footer.png" alt="Chicken Icon" />
-        </div>
-        <div class="icono">
-          <p>
-            <img class="icono-icono" src="./images/ubicacion.png" alt="#" />
-            345 Faulconer Drive, Suite 4. Charlottesville, CA, 12345
-          </p>
-          <p>
-            <img class="icono-icono" src="./images/telefono.png" alt="#" />
-            (123) 456-7890
-          </p>
-
-          <p>
-            Medios de Comunicación solciales:
-            <a href="#">
-              <img
-                class="icono-icono"
-                src="./images/facebook.png"
-                alt="facebook"
-              />
-            </a>
-            <img
-              class="icono-icono"
-              src="./images/instagram.png"
-              alt="instagram"
-            />
-          </p>
-        </div>
-      </div>
-    </main>
-
-    <footer>
+  <main>
+    <section class="contactenos">
       <div class="container">
-        <p>&copy; 2018. Lift Media Inc.</p>
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombres</label>
+              <input type="text" id="name" name="name" placeholder="Daniel" required>
+            </div>
+            <div class="form-group">
+              <label for="surname">Apellidos</label>
+              <input type="text" id="surname" name="surname" placeholder="Porras" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Tu pedido</label>
+            <textarea id="message" name="message" placeholder="Escribe tu pedido" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
-    </footer>
+    </section>
+  </main>
+
+  <footer>
+      <div class="footer-container">
+          <img src="./images/footer.png" alt="Plato gourmet del restaurante" width="200" height="150">
+          <div class="footer-content">
+              <address>
+                  <img src="./images/ubicacion.png" alt="Icono de ubicación" width="20" height="20">
+                  <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
+              </address>
+              <div class="contact">
+                  <img src="./images/telefono.png" alt="Icono de teléfono" width="20" height="20">
+                  <p><a href="tel:+51907755315">(51) 907755315</a></p>
+              </div>
+              <div class="social-media">
+                  <p>Redes sociales</p>
+                  <a href="https://www.facebook.com/elbuensabor" aria-label="Visita nuestra página de Facebook">
+                      <img src="./images/facebook.png" alt="Logo de Facebook" width="30" height="30">
+                  </a>
+                  <a href="https://www.twitter.com/elbuensabor" aria-label="Síguenos en Twitter">
+                      <img src="./images/twitter.png" alt="Logo de Twitter" width="30" height="30">
+                  </a>
+                  <a href="https://www.instagram.com/elbuensabor" aria-label="Síguenos en Instagram">
+                      <img src="./images/instagram.png" alt="Logo de Instagram" width="30" height="30">
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>&copy; 2024 El Buen Sabor. Todos los derechos reservados.</p>
+      </div>
+  </footer>
 
     <script
       src="https://kit.fontawesome.com/your-fontawesome-kit-code.js"

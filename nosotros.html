@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <title>Nosotros</title>
@@ -9,23 +10,29 @@
 
   <body>
     <header>
-        <div class="contenedor-uno">
-        <nav class="navegacion">
-          <a class="logo" href="index.html">Sabor Y Placer</a>
-          <div class="navegacion__items">
-            <a href="index.html">Inicio</a>
-            <a href="menu.html">Menú</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="contactenos.html">Contáctenos</a>
-          </div>
-        </nav>
+      <div class="containerHeader">
+          <nav>
+              <a href="index.html" class="logo">
+                  <h1>Sabor Y Placer</h1>
+              </a>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="menu.html">Menú</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+                  <li><a href="contactenos.html">Contáctenos</a></li>
+              </ul>
+          </nav>
+      </div>
     </header>
 
-    <section>
+    <main>
       <div class="contenido">
+        <div class="imagen">
+          <img src="./images/plato.jpg" alt="Imagen del plato" />
+        </div>
         <div class="nosotros">
           <h1>Nosotros</h1>
-          <p>
+          <p class="texto">
             Bienvenidos a nuestro restaurante, donde la pasión por la comida y
             la excelencia en el servicio son nuestros pilares fundamentales.
             Desde nuestros inicios, hemos trabajado incansablemente para ofrecer
@@ -45,7 +52,7 @@
 
           <br />
           <div class="btn-sabermas">
-            <ul>
+            <ul class="btn">
               <li onclick="alert('Aun no implementado')">
                 Saber mas...
                 <span></span><span></span><span></span><span></span>
@@ -53,15 +60,41 @@
             </ul>
           </div>
         </div>
-        <div class="imagen">
-          <img src="./images/plato.jpg" alt="Imagen del plato" />
-        </div>
+        
       </div>
-    </section>
+    </main>
     <br />
-    <hr />
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+          <img src="./images/footer.png" alt="Plato gourmet del restaurante" width="200" height="150">
+          <div class="footer-content">
+              <address>
+                  <img src="./images/ubicacion.png" alt="Icono de ubicación" width="20" height="20">
+                  <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
+              </address>
+              <div class="contact">
+                  <img src="./images/telefono.png" alt="Icono de teléfono" width="20" height="20">
+                  <p><a href="tel:+51907755315">(51) 907755315</a></p>
+              </div>
+              <div class="social-media">
+                  <p>Redes sociales</p>
+                  <a href="https://www.facebook.com/elbuensabor" aria-label="Visita nuestra página de Facebook">
+                      <img src="./images/facebook.png" alt="Logo de Facebook" width="30" height="30">
+                  </a>
+                  <a href="https://www.twitter.com/elbuensabor" aria-label="Síguenos en Twitter">
+                      <img src="./images/twitter.png" alt="Logo de Twitter" width="30" height="30">
+                  </a>
+                  <a href="https://www.instagram.com/elbuensabor" aria-label="Síguenos en Instagram">
+                      <img src="./images/instagram.png" alt="Logo de Instagram" width="30" height="30">
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>&copy; 2024 El Buen Sabor. Todos los derechos reservados.</p>
+      </div>
+  </footer>
 
   </body>
 </html>

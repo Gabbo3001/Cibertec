@@ -1,42 +1,63 @@
-@import url("./normalize.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url("./styles/index.css");
 body {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
-  background-color: #1a1516;
+  padding: 0;
+  margin: 0;
+  background-color: #1A1516;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.logo {
-  text-decoration: none;
-  color: #c29a53;
-  font-weight: bold;
-  font-size: 24px;
-  margin-right: 20px;
+/*            NavHeader           */
+header {
+  padding: 10px 0;
 }
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
+.containerHeader {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-h1,
-p {
-  color: rgb(0, 0, 0);
-}
-
-.contenido {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row-reverse;
+}
+.logo {
+  text-decoration: none;
+  color: #333;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Alice";
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  margin-left: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.logo {
+  color: #c29a53;
+  font-size: 24px;
+  font-weight: 700;
+}
+/*      end navbar      */
+
+.contenido {
+  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
 .texto {
   flex: 1;
   margin-right: 20px;
-}
-
-img {
-  margin: 15px;
 }
 
 .nosotros {
@@ -65,33 +86,28 @@ img {
   margin-bottom: 50px;
 }
 
-.navegacion__items {
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
-  align-items: center;
-}
+
 
 .imagen img {
   max-width: 600px;
   height: auto;
   border-radius: 20px;
 }
-/*boton*/
+/*       boton      */
 .btn-sabermas{
   display: flex;
   justify-content: flex-end;
 }
-ul{
+.btn{
 
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li:hover{
+.btn li:hover{
   cursor: pointer;
 }
-ul li {
+.btn li {
   --c: #C29A53;
   color: var(--c);
   font-size: 16px;
@@ -111,7 +127,7 @@ ul li {
   transition: 0.5s;
   margin: 1em;
 }
-ul li span {
+.btn li span {
   position: absolute;
   width: 25%;
   height: 100%;
@@ -123,21 +139,60 @@ ul li span {
   transition-delay: calc((var(--n) - 1) * 0.1s);
   z-index: -1;
 }
-ul li:hover {
+.btn li:hover {
   color: black;
 }
-ul li:hover span {
+.btn li:hover span {
   transform: translateY(0) scale(2);
 }
 
-ul li span:nth-child(1) {
+.btn li span:nth-child(1) {
   --n: 1;
 }
 
-ul li span:nth-child(2) {
+.btn li span:nth-child(2) {
   --n: 2;
 }
 
-ul li span:nth-child(3) {
+.btn li span:nth-child(3) {
   --n: 3;
+}
+
+/* ------FOOTER---------*/
+footer {
+  display: flex;
+  padding-inline: 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #c29a53 72%);
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 218px;
+  margin-top: 65px;
+}
+footer img {
+  border-radius: 20px;
+}
+address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.copyright {
+  display: block;
+  text-align: center;
 }
