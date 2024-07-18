@@ -1,13 +1,89 @@
-@import url("/styles/index.css");
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300..900&display=swap');
 
-/*******************  MAIN  *******************/
+/* Variables CSS */
+:root {
+  --primary-color: #C29A53;
+  --background-color: #1A1516;
+  --font-primary: 'Rubik', sans-serif;
+  --font-secondary: 'Alice', serif;
+  --transition-time: 0.3s;
+}
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--font-primary);
+}
+
+.root {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: white;
+  opacity: 1;
+}
+
+/* Header y nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.9rem;
+}
+
+header h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+}
+
+nav > * + * {
+  margin-left: 2rem;
+}
+
+nav a {
+  color: white;
+  transition: color var(--transition-time) ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Main */
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+}
 main {
   padding: 20px;
 }
 
+hr {
+    margin: 0 auto;
+    /* margin-top: 40px; */
+    width: 40%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--primary-color), rgba(255, 255, 255, 0));
+}
+
 section {
-  margin-bottom: 40px;
-  margin: 0 0 20px 80px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 8%;
 }
 
 section h2 {

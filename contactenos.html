@@ -7,100 +7,67 @@
     <link rel="stylesheet" href="./styles/contactenos.css" />
   </head>
   <body>
-    <header>
-      <div class="containerHeader">
+    <div class="root">
+        <header>
+          <a href="/index.html"><h2>Sabor Y Placer</h2></a>
           <nav>
-              <a href="index.html" class="logo">
-                  <h1>Sabor Y Placer</h1>
-              </a>
-              <ul>
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="menu.html">Menú</a></li>
-                  <li><a href="nosotros.html">Nosotros</a></li>
-                  <li><a href="contactenos.html">Contáctenos</a></li>
-              </ul>
+            <a href="/index.html">Inicio</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/nosotros.html">Nosotros</a>
+            <a href="/contactenos.html">Contáctenos</a>
           </nav>
-      </div>
-    </header>
+        </header>
 
   <main style="display: flex;justify-content: center;">
-    <div class="container">
-      <div class="text">
-         Contact us Form
-      </div>
-      <form action="#">
-         <div class="form-row">
-            <div class="input-data">
-               <input type="text" required>
-               <div class="underline"></div>
-               <label for="">First Name</label>
-            </div>
-            <div class="input-data">
-               <input type="text" required>
-               <div class="underline"></div>
-               <label for="">Last Name</label>
-            </div>
-         </div>
-         <div class="form-row">
-            <div class="input-data">
-               <input type="text" required>
-               <div class="underline"></div>
-               <label for="">Email Address</label>
-            </div>
-            <div class="input-data">
-               <input type="text" required>
-               <div class="underline"></div>
-               <label for="">Website Name</label>
-            </div>
-         </div>
-         <div class="form-row">
-         <div class="input-data textarea">
-            <textarea rows="8" cols="80" required></textarea>
-            <br />
-            <div class="underline"></div>
-            <label for="">Write your message</label>
-            <br />
-
-                  <input type="submit" value="submit">
-
-      </form>
-      </div>
+    <form class="form">
+      <div class="title">Contact us</div>
+      <input type="text" placeholder="Your name" class="input">
+      <input type="email" placeholder="Your email" class="input"> 
+      <textarea placeholder="Your message"></textarea>
+       
+      <button type="button">Enviar</button>
+  </form>
+  </form>
   </main>
 
   <footer>
-      <div class="footer-container">
-          <img src="./images/footer.png" alt="Plato gourmet del restaurante" width="200" height="150">
-          <div class="footer-content">
-              <address>
-                  <img src="./images/ubicacion.png" alt="Icono de ubicación" width="20" height="20">
-                  <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
-              </address>
-              <div class="contact">
-                  <img src="./images/telefono.png" alt="Icono de teléfono" width="20" height="20">
-                  <p><a href="tel:+51907755315">(51) 907755315</a></p>
-              </div>
-              <div class="social-media">
-                  <p>Redes sociales</p>
-                  <a href="https://www.facebook.com/elbuensabor" aria-label="Visita nuestra página de Facebook">
-                      <img src="./images/facebook.png" alt="Logo de Facebook" width="30" height="30">
-                  </a>
-                  <a href="https://www.twitter.com/elbuensabor" aria-label="Síguenos en Twitter">
-                      <img src="./images/twitter.png" alt="Logo de Twitter" width="30" height="30">
-                  </a>
-                  <a href="https://www.instagram.com/elbuensabor" aria-label="Síguenos en Instagram">
-                      <img src="./images/instagram.png" alt="Logo de Instagram" width="30" height="30">
-                  </a>
-              </div>
+    <div class="footer-container">
+      <img src="./images/footer-png.png" alt="Plato gourmet del restaurante" width="200" height="150" class="pollo-ico">
+      <div class="footer-content">
+          <address>
+              <img src="./images/ubicacion.png" alt="Icono de ubicación" width="20" height="20" class="no-border-radius">
+              <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
+          </address>
+          <div class="contact">
+              <img src="./images/telefono.png" alt="Icono de teléfono" width="20" height="20" class="no-border-radius">
+              <p><a href="tel:+51907755315">(51) 907755315</a></p>
+              <a href="https://api.whatsapp.com/send?phone=+51907755315" class="btn-wsp" target="_blank">
+                <i class="fa fa-whatsapp icono"></i>
+            </a>
+          </div>  
+          <div class="social-media">
+              <p>Redes sociales</p>
+              <a href="https://www.facebook.com/elbuensabor" aria-label="Visita nuestra página de Facebook">
+                  <img src="./images/facebook.png" alt="Logo de Facebook" class="no-border-radius">
+              </a>
+              <a href="https://www.twitter.com/elbuensabor" aria-label="Síguenos en Twitter">
+                  <img src="./images/twitter.png" alt="Logo de Twitter" class="no-border-radius">
+              </a>
+              <a href="https://www.instagram.com/elbuensabor" aria-label="Síguenos en Instagram">
+                  <img src="./images/instagram.png" alt="Logo de Instagram" class="no-border-radius">
+              </a>
           </div>
       </div>
-      <div class="copyright">
-          <p>&copy; 2024 El Buen Sabor. Todos los derechos reservados.</p>
-      </div>
+  </div>
+  <div class="copyright">
+      <p>&copy; 2024 El Buen Sabor. Todos los derechos reservados.</p>
+  </div>
   </footer>
 
     <script
       src="https://kit.fontawesome.com/your-fontawesome-kit-code.js"
       crossorigin="anonymous"
     ></script>
+    </div>
   </body>
 </html>

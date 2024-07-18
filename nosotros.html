@@ -1,92 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title>Nosotros</title>
     <link rel="stylesheet" href="./styles/nosotros.css" media="screen" />
   </head>
 
   <body>
-    <header>
-      <div class="containerHeader">
-          <nav>
-              <a href="index.html" class="logo">
-                  <h1>Sabor Y Placer</h1>
-              </a>
-              <ul>
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="menu.html">Menú</a></li>
-                  <li><a href="nosotros.html">Nosotros</a></li>
-                  <li><a href="contactenos.html">Contáctenos</a></li>
-              </ul>
-          </nav>
-      </div>
-    </header>
-
-    <main>
-      <div class="contenido">
-        <div class="imagen">
-          <img src="./images/plato.jpg" alt="Imagen del plato" />
-        </div>
-        <div class="nosotros">
-          <h1>Nosotros</h1>
-          <p class="texto">
-            Bienvenidos a nuestro restaurante, donde la pasión por la comida y
-            la excelencia en el servicio son nuestros pilares fundamentales.
-            Desde nuestros inicios, hemos trabajado incansablemente para ofrecer
-            a nuestros clientes una experiencia culinaria única y memorable.
+    <div class="root">
+      <header>
+        <a href="/index.html"><h2>Sabor Y Placer</h2></a>
+        <nav>
+          <a href="/index.html">Inicio</a>
+          <a href="/menu.html">Menu</a>
+          <a href="/nosotros.html">Nosotros</a>
+          <a href="/contactenos.html">Contáctenos</a>
+        </nav>
+      </header>
+  
+      <main>
+        <video  autoplay preload loop controls alt="video-promocional">
+          <source src="./images/video-promocional.mp4" type="video/mp4">
+        </video>
+        <div class="texto">
+            <h1>Nosotros</h1>
+            <p>
+                Bienvenidos a nuestro restaurante, donde la pasión por la comida y la excelencia en el servicio son nuestros pilares fundamentales. Desde nuestros inicios, hemos trabajado incansablemente para ofrecer a nuestros clientes una experiencia culinaria única y memorable. Nuestro equipo de chefs altamente capacitados se enorgullece de utilizar los mejores ingredientes frescos y de temporada para crear platos que cautiven los sentidos. Nos esforzamos por combinar tradición y creatividad, dando vida a sabores auténticos y sorprendentes. Además de nuestra exquisita comida, nos enorgullece brindar un servicio excepcional. Nuestro personal está dedicado a hacer que cada visita sea una verdadera delicia, atendiendo a las necesidades y preferencias de cada cliente con atención y amabilidad.
+            </p>
             <br />
-            Nuestro equipo de chefs altamente capacitados se enorgullece de
-            utilizar los mejores ingredientes frescos y de temporada para crear
-            platos que cautiven los sentidos. Nos esforzamos por combinar
-            tradición y creatividad, dando vida a sabores auténticos y
-            sorprendentes.
-            <br />
-            Además de nuestra exquisita comida, nos enorgullece brindar un
-            servicio excepcional. Nuestro personal está dedicado a hacer que
-            cada visita sea una verdadera delicia, atendiendo a las necesidades
-            y preferencias de cada cliente con atención y amabilidad.
-          </p>
-
-          <br />
-          <div class="btn-sabermas">
-            <ul class="btn">
-              <li onclick="alert('Aun no implementado')">
-                Saber mas...
-                <span></span><span></span><span></span><span></span>
-              </li>
-            </ul>
-          </div>
+            <button class="btn">
+                Ver mas...
+            </button>
         </div>
-        
-      </div>
     </main>
-    <br />
+    
+      <br />
 
-    <footer>
-      <div class="footer-container">
-          <img src="./images/footer.png" alt="Plato gourmet del restaurante" width="200" height="150">
+      <footer>
+        <div class="footer-container">
+          <img src="./images/footer-png.png" alt="Plato gourmet del restaurante" width="200" height="150" class="pollo-ico">
           <div class="footer-content">
               <address>
-                  <img src="./images/ubicacion.png" alt="Icono de ubicación" width="20" height="20">
+                  <img src="./images/ubicacion.png" alt="Icono de ubicación" width="20" height="20" class="no-border-radius">
                   <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
               </address>
               <div class="contact">
-                  <img src="./images/telefono.png" alt="Icono de teléfono" width="20" height="20">
+                  <img src="./images/telefono.png" alt="Icono de teléfono" width="20" height="20" class="no-border-radius">
                   <p><a href="tel:+51907755315">(51) 907755315</a></p>
-              </div>
+                  <a href="https://api.whatsapp.com/send?phone=+51907755315" class="btn-wsp" target="_blank">
+                    <i class="fa fa-whatsapp icono"></i>
+                </a>
+              </div>  
               <div class="social-media">
                   <p>Redes sociales</p>
                   <a href="https://www.facebook.com/elbuensabor" aria-label="Visita nuestra página de Facebook">
-                      <img src="./images/facebook.png" alt="Logo de Facebook" width="30" height="30">
+                      <img src="./images/facebook.png" alt="Logo de Facebook" class="no-border-radius">
                   </a>
                   <a href="https://www.twitter.com/elbuensabor" aria-label="Síguenos en Twitter">
-                      <img src="./images/twitter.png" alt="Logo de Twitter" width="30" height="30">
+                      <img src="./images/twitter.png" alt="Logo de Twitter" class="no-border-radius">
                   </a>
                   <a href="https://www.instagram.com/elbuensabor" aria-label="Síguenos en Instagram">
-                      <img src="./images/instagram.png" alt="Logo de Instagram" width="30" height="30">
+                      <img src="./images/instagram.png" alt="Logo de Instagram" class="no-border-radius">
                   </a>
               </div>
           </div>
@@ -94,7 +69,8 @@
       <div class="copyright">
           <p>&copy; 2024 El Buen Sabor. Todos los derechos reservados.</p>
       </div>
-  </footer>
+      </footer>
+    </div>
 
   </body>
 </html>
