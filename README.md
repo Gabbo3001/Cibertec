@@ -4,7 +4,7 @@
   - Daniel Porras
   - Gabriel Bustinza
   - Raul Ramos
-  - ?
+  - Paola Cruz
 
 
 Este proyecto hecho en un par de dias, busca aprender los fundamentos y aplicarlos en un restaurant virtual y poder publicarlo algun dia :'v 
